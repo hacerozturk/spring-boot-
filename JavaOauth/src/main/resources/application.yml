@@ -1,0 +1,36 @@
+logging:
+  level:
+    root: info
+    org.springframework.web: info
+    org.springframework.security: info
+spring:
+  thymeleaf:
+    cache: false
+  security:
+    oauth2:
+      client:
+        registration:
+          google:
+            client-id: 769298353037-f1llulmr2u08egjhhhorbtfpbkv1t58n.apps.googleusercontent.com
+            client-secret: 3f6o8XfaAp_jL-NjCeQdd-dG
+#            client-authentication-method: basic
+#            authorization-grant-type: authorization_code
+#            redirect-uri-template: "{baseUrl}/login/oauth2/code/{registrationId}"
+            scope: profile, email, address, phone
+            client-name: Google Account
+#        provider:
+#          google:
+#            authorization-uri: https://accounts.google.com/o/oauth2/v2/auth
+#            token-uri: https://www.googleapis.com/oauth2/v4/token
+#            user-info-uri: https://www.googleapis.com/oauth2/v3/userinfo
+#            user-name-attribute: sub
+#            jwk-set-uri: https://www.googleapis.com/oauth2/v3/certs
+          github:
+            client-id: 7b0970c4679c153b582c
+            client-secret: 0b648901ba8dbdcfbeb67feaeba030bab57cd394
+#            client-authentication-method: basic
+#            authorization-grant-type: authorization_code
+#            redirect-uri-template: "{baseUrl}/login/oauth2/code/{registrationId}"
+            scope: profile, email, address, phone
+            client-name: Github Account
+
